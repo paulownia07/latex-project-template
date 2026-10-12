@@ -1,0 +1,27 @@
+{
+    "name": "Latex Project Template",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "remoteUser": "vscode",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "mathematic.vscode-latex",
+                "James-Yu.latex-workshop"
+            ],
+            "settings": {
+                "latex-workshop.latex.autoBuild.run": "onSave",
+                "latex-workshop.latex.outDir": "%DIR%/out",
+                "latex-workshop.linting.run": "onSave",
+                "latex-workshop.linting.chktex.enabled": true,
+                "latex-workshop.formatting.latex": "latexindent",
+                "[latex]": {
+                    "editor.defaultFormatter": "James-Yu.latex-workshop",
+                    "editor.formatOnSave": true
+                }
+            }
+        }
+    }
+}
